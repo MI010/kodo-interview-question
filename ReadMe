@@ -1,0 +1,19 @@
+/*
+Design a net pay calculator for a payroll system. Net pay is the amount remaining after income tax is deducted from the salary of an employee. The calculator takes the salary of the employee as an input and deducts the taxes based on predefined tax slabs to calculate the net pay. Note that the tax slabs are subject to frequent changes and hence the system needs to be easily configurable to adapt these changes without or with minimal change in the codebase.
+Implement this using object oriented programming and write unit tests for validating the code.
+
+Slabs:
+* 0 to 500000 - 5%
+* 500000 to 1000000 - 10%
+* above 1000000 - 20%
+
+Salary = 600000 - lies in slab 2
+
+first 500000 of the salary will be taxed 5% (slab 1) = 500000*5/100 = 25000
+next 100000 will be taxed  10% (slab 2) = 100000*10/100 = 10000
+
+total tax = 25000 + 10000 = 35000
+
+net salary = 600000 - 35000 = 565000
+
+*/
